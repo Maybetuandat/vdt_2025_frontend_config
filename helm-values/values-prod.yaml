@@ -13,14 +13,17 @@ service:
   nodePort: 30001
   portName: vdt-web-port
 
-resources: {}
+
+resources:
+  requests:
+    memory: "64Mi"
+    cpu: "50m"
+  limits:
+    memory: "128Mi"
+    cpu: "200m"
 
 volumes: []
-
 volumeMounts: []
-
 nodeSelector: {}
-
 tolerations: []
-
 affinity: {}

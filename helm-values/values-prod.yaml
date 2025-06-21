@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: maybetuandat/vdt_fe
   pullPolicy: IfNotPresent
-  tag: "1.0"
+  tag: "1.3"
 
 securityContext: {}
 

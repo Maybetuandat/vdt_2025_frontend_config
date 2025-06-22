@@ -6,12 +6,18 @@ image:
 
 securityContext: {}
 
+# service:
+#   type: ClusterIP 
+#   port: 80
+#   targetPort: 80
+#   portName: vdt-web-port
+
 service:
-  type: ClusterIP 
+  type: NodePort
   port: 80
   targetPort: 80
+  nodePort: 30001
   portName: vdt-web-port
-
 
 ingress:
   enabled: true
